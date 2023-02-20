@@ -9,7 +9,7 @@ import {
   Platform,
   Keyboard,
 } from 'react-native';
-import Task from './components/Task.js';
+import Task from './src/components/Task.js';
 
 export default function App() {
   const [task, setTask] = useState();

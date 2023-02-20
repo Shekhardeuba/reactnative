@@ -1,24 +1,13 @@
-import {StyleSheet, View} from 'react-native';
 import React from 'react';
-import CarsList from './components/CarsList';
-import Header from './components/Header';
+import { View } from 'react-native';
+import Store from './comp/Store';
+import {Provider} from 'react-redux';
 
 const App = () => {
   return (
-    <View style={styles.container}>
-     <Header />
-      <CarsList />
-    </View>
-  );
+      <Provider store = {Store}>
+
+      </Provider>
+    
+  )
 };
-
-export default App;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-  },
-});
